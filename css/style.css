@@ -299,7 +299,7 @@ body {
   width: 100%;
   max-width: 1920px;
   /* margin: 0 auto; */
-  background-image: url(/images/castle-1920.jpg);
+  background-image: url(./images/castle-1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
