@@ -1667,3 +1667,24 @@ body {
     display: block;
   }
 }
+.details {
+  background-image: url(../images/detail.jpeg);
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Высота блока будет занимать 100% видимой части экрана */
+}
+.details__block {
+  font-size: 50px;
+  color: #f4f7f8;
+  opacity: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.details__block.show {
+  opacity: 1;
+}
