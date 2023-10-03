@@ -496,7 +496,7 @@ body {
 /* GALLERY */
 
 .gallery {
-  background-image: url(/images/image-gallery.jpg);
+  background-image: url(../images/image-gallery.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1920px;
