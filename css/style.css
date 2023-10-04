@@ -3,16 +3,17 @@
   font-style: normal;
   font-weight: 400;
   src: local("OpenSans Medium"),
-    url("/fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("/fonts/OpenSans-Regular.woff") format("woff");
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: local("OpenSans Bold"), url("/fonts/OpenSans-Bold.woff2") format("woff2"),
-    url("/fonts/OpenSans-Bold.woff") format("woff");
+  src: local("OpenSans Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -20,8 +21,8 @@
   font-style: normal;
   font-weight: 600;
   src: local("OpenSans regular"),
-    url("/fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("/fonts/OpenSans-Regular.woff") format("woff");
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
 }
 
 :root {
@@ -554,13 +555,13 @@ body {
   max-width: 350px;
   max-height: 350px;
   object-fit: cover;
+  padding-right: 50px;
 }
 
 .gallery__image__3 {
   max-width: 350px;
   max-height: 350px;
   object-fit: cover;
-  padding-right: 50px;
 }
 
 .visually-hidden {
@@ -655,12 +656,11 @@ body {
   .gallery__image__2 {
     width: 200px;
     height: 200px;
+    padding-right: 0;
   }
   .gallery__image__3 {
     width: 200px;
     height: 200px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media (max-width: 700px) {
@@ -678,7 +678,7 @@ body {
     width: 100%;
     height: auto;
     padding-left: 0;
-    padding-bottom: 0;
+    padding-bottom: 29px;
   }
   .gallery__image__3 {
     width: 100%;
@@ -708,7 +708,7 @@ body {
     padding-bottom: 11px;
   }
   .gallery__block {
-    padding-bottom: 49px;
+    padding-bottom: 20px;
   }
 }
 
@@ -932,7 +932,7 @@ body {
   line-height: 16px;
   letter-spacing: 0em;
   color: #999999;
-  padding-bottom: 9px;
+  padding-bottom: 13px;
   margin-left: 50px;
   max-width: 165px;
 }
@@ -959,7 +959,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  letter-spacing: -0.7px;
+
   text-align: left;
   color: #333;
   margin-left: 50px;
@@ -1271,13 +1271,13 @@ body {
   border-radius: 100px;
   max-width: 270px;
   max-height: 50px;
-  padding: 13px 16px;
-  font-family: Open Sans;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25px;
+  padding: 8px 36px;
   margin-right: 20px;
   transition: background-color 0.2s ease-in-out;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
 }
 .connection__form__input:hover {
   background-color: #ececec;
@@ -1297,6 +1297,7 @@ body {
   line-height: 32px;
   color: #333;
   padding-bottom: 5px;
+  letter-spacing: 0.1px;
 }
 
 .connection__form {
@@ -1304,7 +1305,7 @@ body {
 }
 
 .connection__form__btn {
-  padding: 13px 35px;
+  padding: 14px 35px;
   font-family: Open Sans;
   font-size: 18px;
   font-weight: 700;
@@ -1404,7 +1405,14 @@ body {
     padding-top: 25px;
   }
   .connection__form {
-    padding-top: 22px;
+    padding-top: 20px;
+  }
+  .connection__form__input {
+    padding: 8px 40px;
+    margin-right: 15px;
+  }
+  .connection__form__btn {
+    padding: 14px 40px;
   }
   .connection__social__text {
     padding-bottom: 7px;
@@ -1424,7 +1432,7 @@ body {
     flex-wrap: wrap;
   }
   .connection__form__input {
-    padding: 13px 44px;
+    padding: 8px 44px;
     padding-left: 23px;
     width: 100%;
     max-width: 253px;
@@ -1432,12 +1440,11 @@ body {
   }
 
   .connection__social {
-    padding-top: 29px;
+    padding-top: 27px;
   }
   .connection__form__btn {
-    padding: 11px 28px;
-
-    margin-top: 8px;
+    padding: 12px 28px;
+    margin-top: 11px;
   }
 }
 @media (max-width: 750px) {
@@ -1473,6 +1480,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
+    border-color: #9d5cd0;
     color: #9d5cd0;
     border-radius: 100px;
     background-color: transparent;
@@ -1543,7 +1551,6 @@ body {
 
 .footer__container {
   max-width: 1600px;
-
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1648,9 +1655,11 @@ body {
     width: 97px;
   }
 }
+#scrollToTopButton {
+  display: none;
+}
 @media (max-width: 768px) {
   #scrollToTopButton {
-    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -1682,7 +1691,7 @@ body {
   color: #f4f7f8;
   opacity: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .details__block.show {
