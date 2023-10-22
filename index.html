@@ -6,10 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/modal-contact.css">
-  <link rel="stylesheet" href="css/choices.min.css">
-  <link rel="stylesheet" href="libs/accordion.min.css">
-  <link rel="stylesheet" href="css/swiper.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.png" type="image/svg+xml">
   <title>Blanchard</title>
@@ -17,7 +13,7 @@
 
 <body>
   <header class="header">
-    <div class="header__container">
+    <div class="header__container container">
       <img class="header__logo" alt="Логотип сайта Blanchard" src="./images/logo-header.png">
       <nav class="header__nav">
         <ul class="header__list">
@@ -37,369 +33,326 @@
             <a href="#project" class="header__link">Проекты</a>
           </li>
           <li class="header__item">
-            <a href="#contacts" class="header__link">Контакты</a> <!-- header__item__link -->
+            <a href="#contacts" class="header__link">Контакты</a>
           </li>
         </ul>
       </nav>
 
-      <svg tabindex="0" class="header__search" width="28" height="28" viewBox="0 0 28 28" fill="none"
-        xmlns="http://www.w3.org/2000/svg" aria-label="кнопка поиск">
-        <rect width="8.79564" height="2.19891" transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)"
-          fill="" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z"
-          fill="" />
-      </svg>
-      <input class="search-input" placeholder="Поиск..." style="opacity: 0; visibility: hidden"
-        aria-label="поле поиска">
-      <span class="close-button">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Закрыть">
-          <circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5" />
-          <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="white" stroke-width="1.5"
-            stroke-linecap="round" />
-        </svg>
-      </span>
+      <button class="btn-reset header__search-btn"><svg class="header__search" width="28" height="28"
+          viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="кнопка поиск">
+          <rect width="8.79564" height="2.19891"
+            transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)" fill="" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z"
+            fill="" />
+        </svg></button>
     </div>
-    <div class="header__top-hidden">
-      <img class="header__logo" alt="Логотип сайта Blanchard" src="./images/logo-header.png">
-      <svg class="header__search" width="28" height="28" viewBox="0 0 28 28" fill="none"
-        xmlns="http://www.w3.org/2000/svg" aria-label="Поиск">
-        <rect width="8.79564" height="2.19891" transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)"
-          fill="" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z"
-          fill="" />
-      </svg>
-      <input class="search-input" placeholder="Поиск..." style="opacity: 0; visibility: hidden"
-        aria-label="поле поиска">
-      <span class="close-button">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Закрыть">
-          <circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5" />
-          <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="white" stroke-width="1.5"
-            stroke-linecap="round" />
-        </svg>
-      </span>
-    </div>
-    <div class="header__nav-hidden">
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="#about" class="header__link">О нас</a>
-        </li>
-        <li class="header__item">
-          <a href="#gallery" class="header__link">Галерея</a>
-        </li>
-        <li class="header__item">
-          <a href="#catalog" class="header__link">Каталог</a>
-        </li>
-        <li class="header__item">
-          <a href="#event" class="header__link">События</a>
-        </li>
-        <li class="header__item">
-          <a href="#project" class="header__link">Проекты</a>
-        </li>
-        <li class="header__item">
-          <a href="#contacts" class="header__link">Контакты</a>
-        </li>
-      </ul>
-    </div>
+
   </header>
-  <section class="mailing">
-    <div class="mailing__container">
-      <div class="mailing__block">
-        <h2 class="mailing__block-title">Прикоснитесь к прекрасному</h2>
-        <p class="mailing__block-subtitle">
-          Мы вынуждены отталкиваться от того, что реализация намеченных
-          плановых заданий создаёт предпосылки для новых предложений
+  <main class="main">
+    <section class="mailing">
+      <div class="mailing__container container">
+        <div class="mailing__block">
+          <h1 class="mailing__block-title">Прикоснитесь к прекрасному</h1>
+          <p class="mailing__block-subtitle">
+            Мы вынуждены отталкиваться от того, что реализация намеченных
+            плановых заданий создаёт предпосылки для новых предложений
+          </p>
+          <button class="mailing__block-btn">Подписаться на рассылку</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__block container">
+        <h2 class="about__title">О нас</h2>
+        <p class="about__subtitle">
+          Ясность нашей позиции очевидна: семантический разбор внешних
+          противодействий однозначно определяет каждого участника как способного
+          принимать собственные решения касаемо распределения внутренних
+          резервов и ресурсов. Не следует, однако, забывать,
+          что высококачественный прототип будущего проекта влечёт за собой
+          процесс внедрения и модернизации модели развития. Повседневная
+          практика показывает, что высокое качество позиционных исследований
+          создаёт необходимость включения в производственный план целого ряда
+          внеочередных мероприятий с учётом комплекса распределения внутренних
+          резервов и ресурсов. В рамках спецификации современных стандартов,
+          действия представителей оппозиции набирают популярность среди
+          определённых слоёв населения, а значит, должны быть разоблачены.
         </p>
-        <button class="mailing__block-btn">Подписаться на рассылку</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="about">
-    <div class="about__block">
-      <h2 class="about__title">О нас</h2>
-      <p class="about__subtitle">
-        Ясность нашей позиции очевидна: семантический разбор внешних
-        противодействий однозначно определяет каждого участника как способного
-        принимать собственные решения касаемо распределения внутренних
-        резервов и ресурсов. Не следует, однако, забывать,
-        что высококачественный прототип будущего проекта влечёт за собой
-        процесс внедрения и модернизации модели развития. Повседневная
-        практика показывает, что высокое качество позиционных исследований
-        создаёт необходимость включения в производственный план целого ряда
-        внеочередных мероприятий с учётом комплекса распределения внутренних
-        резервов и ресурсов. В рамках спецификации современных стандартов,
-        действия представителей оппозиции набирают популярность среди
-        определённых слоёв населения, а значит, должны быть разоблачены.
-      </p>
-    </div>
-  </section>
+    <section id="gallery" class="gallery">
+      <div class="gallery__container container">
+        <h2 class="gallery__title">Галерея</h2>
+        <div class="gallery__block">
+          <div class="gallery__block-task">
+            <label class="gallery__checkbox">
+              <input type="checkbox" class="gallery__checkbox-input visually-hidden">
+              <span class="gallery__checkbox-circle"></span>
+              <span class="gallery__checkbox-text">XIX век</span>
+            </label>
 
-  <section id="gallery" class="gallery">
-    <div class="gallery__container">
-      <h2 class="gallery__title">Галерея</h2>
-      <div class="gallery__block">
-        <div class="gallery__block-task">
-          <label class="gallery__checkbox">
-            <input type="checkbox" class="gallery__checkbox-input visually-hidden">
-            <span class="gallery__checkbox-circle"></span>
-            <span class="gallery__checkbox-text">XIX век</span>
-          </label>
+            <label class="gallery__checkbox">
+              <input type="checkbox" class="gallery__checkbox-input visually-hidden">
+              <span class="gallery__checkbox-circle"></span>
+              <span class="gallery__checkbox-text">XX век</span>
+            </label>
 
-          <label class="gallery__checkbox">
-            <input type="checkbox" class="gallery__checkbox-input visually-hidden">
-            <span class="gallery__checkbox-circle"></span>
-            <span class="gallery__checkbox-text">XX век</span>
-          </label>
-
-          <label class="gallery__checkbox">
-            <input type="checkbox" class="gallery__checkbox-input visually-hidden">
-            <span class="gallery__checkbox-circle"></span>
-            <span class="gallery__checkbox-text">Современность</span>
-          </label>
-        </div>
-        <div class="gallery__image">
-          <img class="gallery__image_1" alt="картина галерии" src="./images/gallery-1-1920.jpg">
-          <img class="gallery__image_2" alt="картина галерии" src="./images/gallery-2-1920.jpg">
-          <img class="gallery__image_3" alt="картина галерии" src="./images/gallery-3-1920.jpg">
+            <label class="gallery__checkbox">
+              <input type="checkbox" class="gallery__checkbox-input visually-hidden">
+              <span class="gallery__checkbox-circle"></span>
+              <span class="gallery__checkbox-text">Современность</span>
+            </label>
+          </div>
+          <div class="gallery__image">
+            <img class="gallery__image-1" alt="картина галерии" src="./images/gallery-1-1920.jpg">
+            <img class="gallery__image-2" alt="картина галерии" src="./images/gallery-2-1920.jpg">
+            <img class="gallery__image-3" alt="картина галерии" src="./images/gallery-3-1920.jpg">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="catalog" class="catalog">
-    <div class="catalog__main-block">
-      <h2 class="catalog__title">Каталог</h2>
-      <p class="catalog__subtitle">
-        Акционеры крупнейших компаний, которые представляют собой яркий пример
-        континентально-европейского типа политической культуры, будут
-        объявлены нарушающими общечеловеческие нормы этики и морали. Являясь
-        всего лишь частью общей картины, стремящиеся вытеснить традиционное
-        производство, нанотехнологии и по сей день остаются уделом либералов,
-        которые жаждут быть функционально разнесены на независимые элементы.
-      </p>
-      <div class="catalog__block">
-        <img class="catalog__block-image" alt="портрет Доменико Гирландайо" src="./images/catalog-1-1920.jpg">
-        <div class="catalog__block-text">
-          <h2 class="catalog__block-name">Доменико Гирландайо</h2>
-          <p class="catalog__block-date">2 июня 1448–11 января 1494</p>
-          <p class="catalog__block-about">
-            Один из ведущих флорентийских художников Кватроченто, основатель
-            художественной династии, которую продолжили его брат Давид
-            и сын Ридольфо. Глава художественной мастерской, где юный
-            Микеланджело в течение года овладевал профессиональными навыками.
-            Автор фресковых циклов, в которых выпукло, со всевозможными
-            подробностями показана домашняя жизнь библейских персонажей
-            (в их роли выступают знатные граждане Флоренции в костюмах
-            того времени).
-          </p>
+    <section id="catalog" class="catalog">
+      <div class="catalog__main-block container">
+        <h2 class="catalog__title">Каталог</h2>
+        <p class="catalog__subtitle">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример
+          континентально-европейского типа политической культуры, будут
+          объявлены нарушающими общечеловеческие нормы этики и морали. Являясь
+          всего лишь частью общей картины, стремящиеся вытеснить традиционное
+          производство, нанотехнологии и по сей день остаются уделом либералов,
+          которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="catalog__block">
+          <img class="catalog__block-image" alt="портрет Доменико Гирландайо" src="./images/catalog-1-1920.jpg">
+          <div class="catalog__block-text">
+            <h2 class="catalog__block-name">Доменико Гирландайо</h2>
+            <p class="catalog__block-date">2 июня 1448–11 января 1494</p>
+            <p class="catalog__block-about">
+              Один из ведущих флорентийских художников Кватроченто, основатель
+              художественной династии, которую продолжили его брат Давид
+              и сын Ридольфо. Глава художественной мастерской, где юный
+              Микеланджело в течение года овладевал профессиональными навыками.
+              Автор фресковых циклов, в которых выпукло, со всевозможными
+              подробностями показана домашняя жизнь библейских персонажей
+              (в их роли выступают знатные граждане Флоренции в костюмах
+              того времени).
+            </p>
+          </div>
+        </div>
+
+        <div class="catalog__block">
+          <img class="catalog__block-image" alt="портрет Андреа дель Верроккьо" src="./images/catalog-2-1920.jpg">
+          <div class="catalog__block-text">
+            <h2 class="catalog__block-name">Андреа дель Верроккьо</h2>
+            <p class="catalog__block-date">1435–10 октября 1488</p>
+            <p class="catalog__block-about">
+              Творческий путь молодого Андреа, как и многих знаменитых
+              художников и скульпторов эпохи Возрождения, начался с обучения
+              и работы в одной из ювелирных мастерских Флоренции.
+              Там он занимался не только изготовлением драгоценных украшений,
+              но и познавал основы живописи, пластики и архитектуры. Его первым
+              учителем был Джулиано Веррокки, фамилию которого в несколько
+              изменённом виде Андреа заимствовал для своего будущего псевдонима.
+            </p>
+          </div>
+        </div>
+
+        <div class="catalog__block">
+          <img class="catalog__block-image" alt="портерт Лоренцо ди Креди" src="./images/catalog-3-1920.jpg">
+          <div class="catalog__block-text">
+            <h2 class="catalog__block-name">Лоренцо ди Креди</h2>
+            <p class="catalog__block-date">1459–12 января 1537</p>
+            <p class="catalog__block-about">
+              Один из ведущих флорентийских художников Кватроченто, основатель
+              художественной династии, которую продолжили его брат Давид
+              и сын Ридольфо. Глава художественной мастерской, где юный
+              Микеланджело в течение года овладевал профессиональными навыками.
+              Автор фресковых циклов, в которых выпукло, со всевозможными
+              подробностями показана домашняя жизнь библейских персонажей
+              (в их роли выступают знатные граждане Флоренции в костюмах
+              того времени).
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="catalog__block">
-        <img class="catalog__block-image" alt="портрет Андреа дель Верроккьо" src="./images/catalog-2-1920.jpg">
-        <div class="catalog__block-text">
-          <h2 class="catalog__block-name">Андреа дель Верроккьо</h2>
-          <p class="catalog__block-date">1435–10 октября 1488</p>
-          <p class="catalog__block-about">
-            Творческий путь молодого Андреа, как и многих знаменитых
-            художников и скульпторов эпохи Возрождения, начался с обучения
-            и работы в одной из ювелирных мастерских Флоренции.
-            Там он занимался не только изготовлением драгоценных украшений,
-            но и познавал основы живописи, пластики и архитектуры. Его первым
-            учителем был Джулиано Веррокки, фамилию которого в несколько
-            изменённом виде Андреа заимствовал для своего будущего псевдонима.
-          </p>
+    <section id="event" class="events">
+      <div class="events__main-block container">
+        <h2 class="events__title">События</h2>
+        <div class="events__container">
+          <div class="events__block">
+            <picture>
+              <source media="(max-width: 630px)" srcset="./images/events-1-1920.jpg">
+              <source media="(max-width: 970px)" srcset="./images/events-1-768.jpg">
+              <img class="events__block-image" alt="книжная гравюра" src="./images/events-1-1920.jpg">
+            </picture>
+            <div class="events__block-text">
+              <p class="events__block-date">
+                Музей им. Щусева <br>с 20 марта по 30 апреля
+              </p>
+              <h3 class="events__block-title">
+                Книжная гравюра <br>в живом восприятии
+              </h3>
+              <h3 class="events__block-title title-hidden">
+                Книжная гравюра в живом восприятии
+              </h3>
+              <p class="events__block-subtitle">
+                Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид
+                и сын Ридольфо
+              </p>
+              <a href="index-details.html" target="_blank" class="events__block-link">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="events__block">
+            <picture>
+              <source media="(max-width: 630px)" srcset="./images/events-2-1920.jpg">
+              <source media="(max-width: 970px)" srcset="./images/events-2-768.jpg">
+              <img class="events__block-image" src="./images/events-2-1920.jpg"
+                alt="фотография Дмитрия Петрова и Сергея Ильина">
+            </picture>
+            <div class="events__block-text">
+              <p class="events__block-date">ММОМА <br>24 марта 19:00</p>
+              <h3 class="events__block-title">
+                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+              </h3>
+              <h3 class="events__block-title title-hidden">
+                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+              </h3>
+              <p class="events__block-subtitle">
+                Высокий уровень вовлечения представителей целевой аудитории
+                является чётким доказательством простого факта
+              </p>
+              <a href="index-details.html" target="_blank" class="events__block-link">Подробнее</a>
+            </div>
+          </div>
+          <div class="events__block">
+            <picture>
+              <source media="(max-width: 630px)" srcset="./images/events-3-1920.jpg">
+              <source media="(max-width: 970px)" srcset="./images/events-3-768.jpg">
+              <img class="events__block-image" src="./images/events-3-1920.jpg" alt="выставка Формация 2020">
+            </picture>
+            <div class="events__block-text">
+              <p class="events__block-date">
+                Еврейский музей <br>с 31 марта по 21 апреля
+              </p>
+              <h3 class="events__block-title">Выставка «Формация 2020»</h3>
+              <h3 class="events__block-title title-hidden">
+                Выставка «Формация 2020»
+              </h3>
+              <p class="events__block-subtitle">
+                Идейные соображения высшего порядка, а также современная
+                методология разработки играет важную роль в формировании
+                глубокомысленных рассуждений
+              </p>
+              <a href="index-details.html" target="_blank" class="events__block-link">Подробнее</a>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="catalog__block">
-        <img class="catalog__block-image" alt="портерт Лоренцо ди Креди" src="./images/catalog-3-1920.jpg">
-        <div class="catalog__block-text">
-          <h2 class="catalog__block-name">Лоренцо ди Креди</h2>
-          <p class="catalog__block-date">1459–12 января 1537</p>
-          <p class="catalog__block-about">
-            Один из ведущих флорентийских художников Кватроченто, основатель
-            художественной династии, которую продолжили его брат Давид
-            и сын Ридольфо. Глава художественной мастерской, где юный
-            Микеланджело в течение года овладевал профессиональными навыками.
-            Автор фресковых циклов, в которых выпукло, со всевозможными
-            подробностями показана домашняя жизнь библейских персонажей
-            (в их роли выступают знатные граждане Флоренции в костюмах
-            того времени).
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="event" class="events">
-    <div class="events__main-block">
-      <h2 class="events__title">События</h2>
-      <div class="events__container">
-        <div class="events__block">
-          <picture>
-            <source media="(max-width: 630px)" srcset="./images/events-1-1920.jpg">
-            <source media="(max-width: 970px)" srcset="./images/events-1-768.jpg">
-            <img class="events__block-image" alt="книжная гравюра" src="./images/events-1-1920.jpg">
+    <section id="project" class="projects">
+      <div class="projects__main-block container">
+        <h2 class="projects__title">Проекты</h2>
+        <p class="projects__subtitle">
+          Предварительные выводы: постоянное информационно-пропагандистское
+          обеспечение нашей деятельности однозначно фиксирует необходимость
+          своевременного выполнения сверхзадачи. А ещё независимые государства
+          смешаны с не уникальными данными до степени совершённой
+          неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде
+          всего, постоянное информационно-пропагандистское обеспечение нашей
+          деятельности однозначно фиксирует необходимость экономической
+          целесообразности принимаемых решений. И нет сомнений, что действия
+          представителей оппозиции могут быть рассмотрены исключительно
+          в разрезе маркетинговых и финансовых предпосылок. Банальные,
+          но неопровержимые выводы, а также представители современных социальных
+          резервов призывают нас к новым свершениям, которые, в свою очередь,
+          должны быть смешаны с не уникальными данными до степени совершённой
+          неузнаваемости.
+        </p>
+        <h2 class="projects__partners">Партнёры проектов:</h2>
+        <div class="projects__block">
+          <picture class="projects__block-img">
+            <source media="(max-width: 344px)" srcset="./images/project-logo-1-320.png">
+            <img class="projects__block-logo" alt="логотип freelands foundation" src="./images/project-logo-1.png">
           </picture>
-          <p class="events__block-date">
-            Музей им. Щусева <br>с 20 марта по 30 апреля
-          </p>
-          <h3 class="events__block-title">
-            Книжная гравюра <br>в живом восприятии
-          </h3>
-          <h3 class="events__block-title title-hidden">
-            Книжная гравюра в живом восприятии
-          </h3>
-          <p class="events__block-subtitle">
-            Один из ведущих флорентийских художников Кватроченто, основатель
-            художественной династии, которую продолжили его брат Давид
-            и сын Ридольфо
-          </p>
-          <a href="index-details.html" target="_blank" class="events__block-link">Подробнее</a>
-        </div>
-
-        <div class="events__block">
           <picture>
-            <source media="(max-width: 630px)" srcset="./images/events-2-1920.jpg">
-            <source media="(max-width: 970px)" srcset="./images/events-2-768.jpg">
-            <img class="events__block-image" src="./images/events-2-1920.jpg"
-              alt="фотография Дмитрия Петрова и Сергея Ильина">
+            <source media="(max-width: 344px)" srcset="./images/project-logo-2-320.png">
+            <img class="projects__block-logo" alt="логотип institute for conteprory art"
+              src="./images/project-logo-2.png">
           </picture>
-          <p class="events__block-date">ММОМА <br>24 марта 19:00</p>
-          <h3 class="events__block-title">
-            «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-          </h3>
-          <h3 class="events__block-title title-hidden">
-            «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-          </h3>
-          <p class="events__block-subtitle">
-            Высокий уровень вовлечения представителей целевой аудитории
-            является чётким доказательством простого факта
-          </p>
-          <a href="index-details.html" target="_blank" class="events__block-link">Подробнее</a>
-        </div>
-        <div class="events__block">
-          <picture>
-            <source media="(max-width: 630px)" srcset="./images/events-3-1920.jpg">
-            <source media="(max-width: 970px)" srcset="./images/events-3-768.jpg">
-            <img class="events__block-image" src="./images/events-3-1920.jpg" alt="выставка Формация 2020">
-          </picture>
-          <p class="events__block-date">
-            Еврейский музей <br>с 31 марта по 21 апреля
-          </p>
-          <h3 class="events__block-title">Выставка «Формация 2020»</h3>
-          <h3 class="events__block-title title-hidden">
-            Выставка «Формация 2020»
-          </h3>
-          <p class="events__block-subtitle">
-            Идейные соображения высшего порядка, а также современная
-            методология разработки играет важную роль в формировании
-            глубокомысленных рассуждений
-          </p>
-          <a href="index-details.html" target="_blank" class="events__block-link">Подробнее</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="project" class="projects">
-    <div class="projects__main-block">
-      <h2 class="projects__title">Проекты</h2>
-      <p class="projects__subtitle">
-        Предварительные выводы: постоянное информационно-пропагандистское
-        обеспечение нашей деятельности однозначно фиксирует необходимость
-        своевременного выполнения сверхзадачи. А ещё независимые государства
-        смешаны с не уникальными данными до степени совершённой
-        неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде
-        всего, постоянное информационно-пропагандистское обеспечение нашей
-        деятельности однозначно фиксирует необходимость экономической
-        целесообразности принимаемых решений. И нет сомнений, что действия
-        представителей оппозиции могут быть рассмотрены исключительно
-        в разрезе маркетинговых и финансовых предпосылок. Банальные,
-        но неопровержимые выводы, а также представители современных социальных
-        резервов призывают нас к новым свершениям, которые, в свою очередь,
-        должны быть смешаны с не уникальными данными до степени совершённой
-        неузнаваемости.
-      </p>
-      <h2 class="projects__partners">Партнёры проектов:</h2>
-      <div class="projects__block">
-        <picture class="projects__block-img">
-          <source media="(max-width: 344px)" srcset="./images/project-logo-1-320.png">
-          <img class="projects__block-logo" alt="логотип freelands foundation" src="./images/project-logo-1.png">
-        </picture>
-        <picture>
-          <source media="(max-width: 344px)" srcset="./images/project-logo-2-320.png">
-          <img class="projects__block-logo" alt="логотип institute for conteprory art"
-            src="./images/project-logo-2.png">
-        </picture>
+    <section id="contacts" class="connection">
+      <div class="connection__container container">
+        <div class="connection__text">
+          <h2 class="connection__title">Шоурум № 4</h2>
+          <p class="connection__subtitle">Леонтьевский переулок, дом 5/1</p>
+        </div>
+        <form class="connection__form" id="connection__form" action="https://jsonplaceholder.typicode.com/posts"
+          method="post">
+          <input id="basic_name" class="connection__form-input connection__form-name" type="text" name="username"
+            placeholder="Имя" pattern="[^\d]+" title="Имя не должно содержать цифры" required>
+          <input class="connection__form-input connection__form-email" type="tel" name="phone" placeholder="Телефон"
+            pattern="[0-9]+" title="Телефон должен содержать только цифры" required>
+          <button class="connection__form-btn btn-reset" type="submit" value="Отправить">
+            Заказать обратный звонок
+          </button>
+          <button class="connection__form-hidden" type="submit" value="Отправить">
+            Заказать
+          </button>
+        </form>
+        <div class="connection__social">
+          <h3 class="connection__social-text">Связаться в один клик</h3>
+          <a class="connection__social-links">
+            <svg tabindex="0" class="connection__social-link-wa" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_191243_648)">
+                <path
+                  d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
+                  fill="" />
+                <path
+                  d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87488 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_191243_648">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg></a>
+          <a class="connection__social-links">
+            <svg tabindex="0" class="connection__social-link-tg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_191243_651)">
+                <path
+                  d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                  fill="" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.05308 19.7889L20.7167 14.7649C26.2709 12.4547 27.425 12.0534 28.1772 12.0402C28.3427 12.0373 28.7126 12.0783 28.9522 12.2727C29.1546 12.4369 29.2102 12.6587 29.2369 12.8143C29.2636 12.9699 29.2967 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0044 27.9806C26.724 29.4794 26.1724 29.9819 25.6376 30.0311C24.4762 30.138 23.5942 29.2635 22.4693 28.5261L18.006 25.528C16.0313 24.2268 17.3114 23.5116 18.4368 22.3428C18.7312 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9714 16.7104 23.8545 16.6064C23.7376 16.5024 23.5649 16.5384 23.4404 16.5663C23.2639 16.6064 20.4518 18.465 15.0043 22.1423C14.2061 22.6904 13.4831 22.9575 12.8354 22.9435C12.1213 22.9281 10.7476 22.5397 9.72648 22.2078C8.47396 21.8007 7.47848 21.5854 7.5652 20.8939C7.61032 20.5338 8.10628 20.1655 9.05304 19.789L9.05308 19.7889Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_191243_651">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg></a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section id="contacts" class="connection">
-    <div class="connection__container">
-      <div class="connection__text">
-        <h2 class="connection__title">Шоурум № 4</h2>
-        <p class="connection__subtitle">Леонтьевский переулок, дом 5/1</p>
-      </div>
-      <form class="connection__form" id="connection__form" action="https://jsonplaceholder.typicode.com/posts"
-        method="post">
-        <input id="basic_name" class="connection__form-input connection__form-name" type="text" name="username"
-          placeholder="Имя" pattern="[^\d]+" title="Имя не должно содержать цифры" required>
-        <input class="connection__form-input connection__form-email" type="tel" name="phone" placeholder="Телефон"
-          pattern="[0-9]+" title="Телефон должен содержать только цифры" required>
-        <button class="connection__form-btn btn-reset" type="submit" value="Отправить">
-          Заказать обратный звонок
-        </button>
-        <button class="connection__form-hidden btn-reset" type="submit" value="Отправить">
-          Заказать
-        </button>
-      </form>
-      <div class="connection__social">
-        <h3 class="connection__social-text">Связаться в один клик</h3>
-        <a class="connection__social-links">
-          <svg tabindex="0" class="connection__social-link-wa" width="40" height="40" viewBox="0 0 40 40" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_191243_648)">
-              <path
-                d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
-                fill="" />
-              <path
-                d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87488 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_191243_648">
-                <rect width="40" height="40" fill="white" />
-              </clipPath>
-            </defs>
-          </svg></a>
-        <a class="connection__social-links">
-          <svg tabindex="0" class="connection__social-link-tg" width="40" height="40" viewBox="0 0 40 40" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_191243_651)">
-              <path
-                d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
-                fill="" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M9.05308 19.7889L20.7167 14.7649C26.2709 12.4547 27.425 12.0534 28.1772 12.0402C28.3427 12.0373 28.7126 12.0783 28.9522 12.2727C29.1546 12.4369 29.2102 12.6587 29.2369 12.8143C29.2636 12.9699 29.2967 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0044 27.9806C26.724 29.4794 26.1724 29.9819 25.6376 30.0311C24.4762 30.138 23.5942 29.2635 22.4693 28.5261L18.006 25.528C16.0313 24.2268 17.3114 23.5116 18.4368 22.3428C18.7312 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9714 16.7104 23.8545 16.6064C23.7376 16.5024 23.5649 16.5384 23.4404 16.5663C23.2639 16.6064 20.4518 18.465 15.0043 22.1423C14.2061 22.6904 13.4831 22.9575 12.8354 22.9435C12.1213 22.9281 10.7476 22.5397 9.72648 22.2078C8.47396 21.8007 7.47848 21.5854 7.5652 20.8939C7.61032 20.5338 8.10628 20.1655 9.05304 19.789L9.05308 19.7889Z"
-                fill="white" />
-            </g>
-            <defs>
-              <clipPath id="clip0_191243_651">
-                <rect width="40" height="40" fill="white" />
-              </clipPath>
-            </defs>
-          </svg></a>
-      </div>
-    </div>
-  </section>
-
+    </section>
+  </main>
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__container container">
       <a class="footer__logo">
         <img class="footer__logo-img" src="./images/logo-footer.png" alt="логотип blanchard">
       </a>
